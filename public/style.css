@@ -1,3 +1,6 @@
 .bonjour {
 	color: green;
 }
+#listNom {
+	list-style: none;
+}

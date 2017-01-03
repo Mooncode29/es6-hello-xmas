@@ -14,7 +14,7 @@ document.getElementById('btn').addEventListener('click', function () {
     tab.push(nom);
     var firstLetter = ecriture.charAt(0).toUpperCase();
     var majNom = firstLetter + nom.substr(1).toLowerCase();
-    document.body.appendChild(document.createElement('li')).innerHTML = majNom;
+    document.getElementById('listNom').appendChild(document.createElement('li')).innerHTML = majNom;
     document.getElementById('afficheNom').innerHTML = majNom;
   }
 });

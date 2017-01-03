@@ -12,7 +12,7 @@ document.getElementById('btn').addEventListener('click', () => {
     tab.push(nom);
     let firstLetter = ecriture.charAt(0).toUpperCase();
     let majNom = firstLetter + nom.substr(1).toLowerCase();
-    document.body.appendChild(document.createElement('li')).innerHTML = majNom
+    document.getElementById('listNom').appendChild(document.createElement('li')).innerHTML = majNom
   	document.getElementById('afficheNom').innerHTML = majNom
 
   }    
