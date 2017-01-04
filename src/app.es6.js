@@ -15,9 +15,9 @@ document.getElementById('btn').addEventListener('click', () => {
     document.getElementById('listNom').appendChild(document.createElement('li')).innerHTML = majNom
   	document.getElementById('afficheNom').innerHTML = majNom
 
-  }    
+  } 
+  document.getElementById('nom').value = "";   
 });
-
 
 let filter =  (array, value) => {
   let filteredArray = [];
@@ -32,13 +32,9 @@ let filter =  (array, value) => {
     }
   }
     return filteredArray;
-
 }
 
-document.getElementById('recherche').addEventListener('click', () => {
-  
-  let finalArray = filter(tab, rechercherInput.value);
-
-  // console.log(finalArray);
+document.getElementById('recherche').addEventListener('click', () => { 
+  let finalArray = filter(tab, rechercherInput.value);  
 });
 

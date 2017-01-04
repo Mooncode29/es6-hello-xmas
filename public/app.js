@@ -17,6 +17,7 @@ document.getElementById('btn').addEventListener('click', function () {
     document.getElementById('listNom').appendChild(document.createElement('li')).innerHTML = majNom;
     document.getElementById('afficheNom').innerHTML = majNom;
   }
+  document.getElementById('nom').value = "";
 });
 
 var filter = function filter(array, value) {
@@ -35,8 +36,5 @@ var filter = function filter(array, value) {
 };
 
 document.getElementById('recherche').addEventListener('click', function () {
-
   var finalArray = filter(tab, rechercherInput.value);
-
-  // console.log(finalArray);
 });
