@@ -1,13 +1,12 @@
 body {
 	background-image: url(http://images.all-free-download.com/images/graphiclarge/white_christmas_baubles_187316.jpg);
 	background-size: cover;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 }
 .main {
 	margin-left: 8em;
-
 }
 .bonjour {
 	color: #035096;
